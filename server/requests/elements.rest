@@ -1,0 +1,27 @@
+GET http://localhost:3000/api/elements/
+Content-Type: application/json
+
+### Create elements
+POST http://localhost:3000/api/elements/
+Content-Type: application/json
+
+{
+  "name":"Margarita de pollo 200 ml",
+  "code":"98990",
+  "quantity":"10",
+  "price":"7500",
+  "provider":""
+}
+
+### Delete one element
+DELETE http://localhost:3000/api/elements/670aada179d6b367184511f4
+Content-Type: application/json
+
+### Update one element
+PUT http://localhost:3000/api/elements/670aeae00b20244d89aa8091
+Content-Type: application/json
+
+{
+  "quantity":"17",
+  "price":"4500"
+}

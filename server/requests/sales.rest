@@ -1,0 +1,26 @@
+POST http://localhost:3000/api/sales
+Content-Type: application/json
+
+{
+  "seller":"Juan Diego",
+  "elements":
+  [
+    {
+      "name": "COCA 200 ML",
+      "code": "99000000",
+      "quantity": 33
+    },
+    {
+      "name": "TODO RICO BBQ 200 ML",
+      "code": "78888",
+      "quantity": 88
+    },
+    {
+      "name": "MARGARITA DE POLLO 200 ML",
+      "code": "98990",
+      "quantity": 88
+    }
+  ],
+  "amount":"90000",
+  "payMethod":"nequi"
+}

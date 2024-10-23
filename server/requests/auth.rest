@@ -1,0 +1,40 @@
+POST http://localhost:3000/api/auth/register
+content-type: application/json
+
+{
+  "name": "Sara Bernal",
+  "username": "sbernal",
+  "password": "sekret",
+  "role": "employee",
+  "organization": "As Solutions"
+}
+###
+POST http://localhost:3000/api/auth/login
+content-type: application/json
+
+{
+  "username": "sbernal",
+  "password": "sekret"
+}
+
+
+### Create other user
+
+POST http://localhost:3000/api/auth/register
+content-type: application/json
+
+{
+  "name": "Juan Diego Garzon Becerra",
+  "username": "jdiego",
+  "password": "sekret",
+  "role": "admin",
+  "organization": "As Solutions"
+}
+###
+POST http://localhost:3000/api/auth/login
+content-type: application/json
+
+{
+  "username": "sbernal",
+  "password": "sekret"
+}
