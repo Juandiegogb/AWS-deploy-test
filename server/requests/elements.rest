@@ -1,4 +1,4 @@
-GET http://localhost:3000/api/elements/
+GET http://localhost:4000/api/elements/
 Content-Type: application/json
 
 ### Create elements
@@ -25,3 +25,19 @@ Content-Type: application/json
   "quantity":"17",
   "price":"4500"
 }
+
+###
+POST http://test-api.alansoft.site:4000/api/elements/
+Content-Type: application/json
+
+{
+  "name":"Margarita de pollo 200 ml",
+  "code":"cczz",
+  "quantity":"10",
+  "price":"7500",
+  "provider":""
+}
+
+###
+GET http://test-api.alansoft.site:4000/api/elements/
+Content-Type: application/json
